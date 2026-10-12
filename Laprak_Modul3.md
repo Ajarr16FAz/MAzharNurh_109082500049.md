@@ -39,8 +39,6 @@ void tampilMahasiswa(Mahasiswa m);
 
 #endif
 ```
-### Output Unguided 1 : 
-*output
 
 Header file mahasiswa.h mengimplementasikan konsep Abstract Data Type (ADT) dengan mengombinasikan Header Guard (#ifndef, #define, #endif) untuk mencegah pendefinisian ganda, deklarasi pustaka standar (<iostream> dan <string>), serta penentuan tipe data terdefinisi struct Mahasiswa yang menampung atribut nama, nim, uts, uas, tugas, dan nilai_akhir. Selain itu, file ini mendefinisikan tiga primitif ADT, yaitu fungsi hitungNilaiAkhir(Mahasiswa m) untuk mengembalikan hasil kalkulasi nilai, prosedur inputMahasiswa(Mahasiswa &m) dengan pass-by-reference (&m) agar proses pengisian data langsung mengubah nilai variabel asli, serta prosedur tampilMahasiswa(Mahasiswa m) untuk menyajikan seluruh informasi data mahasiswa ke layar.   
 
@@ -65,7 +63,8 @@ void tampilMahasiswa(Mahasiswa m) {
 }
 ```
 ### Output Unguided 2 :
-*foto
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1488bbae-f332-40a8-bafb-24c6317ed525" />
+
 
 File mahasiswa.cpp merupakan modul realisasi (body) dari ADT Mahasiswa yang mengimplementasikan fungsi dan prosedur yang telah dideklarasikan sebelumnya pada file header (mahasiswa.h). Kode ini merealisasikan fungsi hitungNilaiAkhir(Mahasiswa m) yang mengembalikan nilai kalkulasi bobot $0.3 \times \text{uts} + 0.4 \times \text{uas} + 0.3 \times \text{tugas}$, prosedur inputMahasiswa(Mahasiswa &m) dengan mekanisme pass-by-reference (&m) serta pemanfaatan cin >> ws dan getline untuk menginputkan data nama, nim, dan nilai-nilai secara presisi sekaligus langsung menghitung nilai_akhir, serta prosedur tampilMahasiswa(Mahasiswa m) yang bertugas menyajikan ringkasan data NIM, nama, dan nilai akhir mahasiswa ke layar. 
 
@@ -92,7 +91,8 @@ int main() {
 }
 ```
 ### Output Unguided 3 :
-*foto
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/de512575-0a0a-4aa3-84f9-5f45b5c0c659" />
+
 
 Program ini menggunakan array satu dimensi arrA. Terdapat fungsi cariMinimum dan cariMaksimum yang mengembalikan nilai bertipe int, serta prosedur hitungRataRata (menggunakan tipe void) untuk menampilkan hasil perhitungan rata-rata. Seluruh fungsionalitas diakses secara interaktif menggunakan kontrol menu switch-case di dalam perulangan do-while.
 
